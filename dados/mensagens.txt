@@ -1,0 +1,15 @@
+# Formato: autor|mensagem
+# Autores válidos: aluno, bot ou sistema
+
+bot|Olá! Eu sou o LogicBot. Vamos praticar JavaScript?
+aluno|Quero entender melhor como as funções ajudam no código.
+bot|Funções organizam ações que podem ser reaproveitadas várias vezes.
+aluno|E quando eu preciso tomar uma decisão no programa?
+bot|Use condicionais, como if e else, para escolher caminhos diferentes.
+aluno|Quando eu uso repetição?
+bot|Use laços como for quando precisar percorrer várias mensagens.
+sistema|Arquivo carregado com sucesso para teste da atividade.
+aluno|Também quero aprender a ler arquivo texto.
+bot|Com FileReader, o navegador consegue ler um arquivo escolhido pelo usuário.
+linha inválida sem separador
+visitante|Esta linha tem autor inválido e pode virar mensagem de sistema.

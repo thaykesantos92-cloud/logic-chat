@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LogicChat - Atividade de JavaScript</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main class="app-shell">
+        <header class="app-header">
+            <div>
+                <p class="eyebrow">Lógica de Programação com JavaScript</p>
+                <h1>LogicChat</h1>
+                <p class="subtitle">Um fake chat para praticar funções, condicionais, repetições e leitura de arquivo texto.</p>
+            </div>
+            <div class="badge">JS básico</div>
+        </header>
+
+        <section class="workspace">
+            <aside class="control-card">
+                <h2>Painel de entrada</h2>
+
+                <label for="autorMensagem">Autor da mensagem</label>
+                <select id="autorMensagem">
+                    <option value="aluno">Aluno</option>
+                    <option value="bot">Bot</option>
+                    <option value="sistema">Sistema</option>
+                </select>
+
+                <label for="textoMensagem">Mensagem</label>
+                <textarea id="textoMensagem" rows="4" placeholder="Digite uma mensagem..."></textarea>
+
+                <div class="button-row">
+                    <button id="btnEnviar" type="button">Enviar</button>
+                    <button id="btnLimpar" type="button" class="button-secondary">Limpar chat</button>
+                </div>
+
+                <div class="divider"></div>
+
+                <h3>Carregar arquivo TXT</h3>
+                <p class="hint">Formato esperado por linha: <strong>autor|mensagem</strong></p>
+                <input id="arquivoTxt" type="file" accept=".txt" />
+                <button id="btnCarregarArquivo" type="button" class="button-full">Ler arquivo</button>
+
+                <div class="divider"></div>
+
+                <h3>Filtro e relatório</h3>
+                <label for="campoFiltro">Palavra para buscar</label>
+                <input id="campoFiltro" type="text" placeholder="Ex.: função" />
+
+                <div class="button-row">
+                    <button id="btnFiltrar" type="button">Filtrar</button>
+                    <button id="btnMostrarTodas" type="button" class="button-secondary">Mostrar todas</button>
+                </div>
+                <button id="btnResumo" type="button" class="button-full button-dark">Mostrar resumo</button>
+
+                <div id="resultadoResumo" class="summary-box">
+                    O resumo aparecerá aqui.
+                </div>
+            </aside>
+
+            <section class="chat-card" aria-label="Área do fake chat">
+                <div class="chat-topbar">
+                    <div>
+                        <h2>Conversa</h2>
+                        <p id="statusChat">Nenhuma mensagem carregada.</p>
+                    </div>
+                    <span class="online-dot"></span>
+                </div>
+
+                <div id="listaMensagens" class="chat-list" aria-live="polite">
+                    <div class="empty-state">
+                        <strong>Chat vazio</strong>
+                        <span>Use o painel ao lado para começar.</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

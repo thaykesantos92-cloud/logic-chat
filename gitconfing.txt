@@ -1,0 +1,2 @@
+git config --global usaer.name Thayke
+git config --global usar.email thaykesantos92@gmail.com
