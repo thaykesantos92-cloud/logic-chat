@@ -36,8 +36,27 @@ function enviarMensagem() {
     // TODO: criar a mensagem na tela
 }
 
-// ETAPA 2
-// Use o valor do select para mudar o tipo da mensagem: aluno, bot ou sistema.
+
+// ETAPA 1
+// Crie uma função para enviar uma mensagem digitada no textarea.
+function enviarMensagem() {
+    // TODO: ler o texto digitado
+    // TODO: validar se está vazio
+    // TODO: criar a mensagem na tela
+
+    const meta = doucument.createElement('span');
+    meta.className = 'message__meta';
+    meta.textContent = 'Aluno';
+
+    const paragrafo = document.createElement('p');
+    paragrafo.textConstent = textoMensagem;
+
+    caixa.appendChild(meta)
+    caixa.appendChild(paragrafo)
+    listaMessages.appendChild(caixa);
+    statusChat.textContent = '1 mensagem enviada no chat.';
+    textoMensagem.value = '';
+}
 
 // ETAPA 3
 // Separe o programa em funções menores.
@@ -47,11 +66,7 @@ function enviarMensagem() {
 
 // ETAPA 5
 // Leia mensagens de um arquivo TXT escolhido pelo usuário.
-const meta = doucument.createElement('span);
-meta.className = 'message__meta';
-meta.textContent = 'Aluno';
 
-const paragrafo.textConstent = textoMensagem;
 
 
 

@@ -1,2 +1,2 @@
-git config --global usaer.name Thayke
-git config --global usar.email thaykesantos92@gmail.com
+git config --global user.name Thayke
+git config --global user.email thaykesantos92@gmail.com
